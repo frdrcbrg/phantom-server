@@ -8,5 +8,4 @@ RUN chmod u+x ./phantom-linux
 
 EXPOSE 19132
 
-CMD ./phantom-linux -server ${SERVER}:19132
-
+CMD ./phantom-linux -server ${SERVER}:${PORT}
