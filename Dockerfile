@@ -6,6 +6,8 @@ COPY phantom-linux .
 
 RUN chmod u+x ./phantom-linux
 
-EXPOSE 19132
+EXPOSE ${PORT}
+
+RUN echo Connecting to server ${SERVER}:${PORT}
 
 CMD ./phantom-linux -server ${SERVER}:${PORT}
